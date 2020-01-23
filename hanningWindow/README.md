@@ -1,4 +1,4 @@
-VIEW THIS RAW IF USING GITHUB ------------------------------------------------------------------------------------------------------^
+VIEW THIS RAW IF USING GITHUB ------------------------------------------------------------------------^
 
 The hanning window is a concept used in signal processing to smooth out data.
 
