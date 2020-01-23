@@ -1,3 +1,5 @@
+VIEW THIS RAW IF USING GITHUB ------------------------------------------------------------------------------------------------------^
+
 The hanning window is a concept used in signal processing to smooth out data.
 
 This is a simplified example but works just the same.  The way to think about the hanning window is a sliding pair of minimum and maximum
