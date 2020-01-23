@@ -8,11 +8,21 @@ of 1 and the weights will increase by one as the indeces increase toward the mid
 array:          1 16 18 13 1 14 16 7 5 13
 filtered array: 0 0 12 11 10 10 10 10 0 0
 
-window:   | | | | | |
-weights:  |1|2|3|2|1|
+window:   | | | | | |           | | | |
+weights:  |1|2|3|2|1|           |1|2|1|
 
 Example section:
+
+Original Array: 
+4 7 0 9 5 2 0 7 7 3 
+Filtered Array: 
+0 4 4 5 5 2 2 5 6 0 
     
-    |1|16|18|13|1|         1. We multiply each spot in the index with the correct weight and we get->     |1|32|36|26|1|
-          ^               2. Then divide by all weights added together and that is the new value of              ^
-    important idx            the important middle index.                                               (1+32+36+26+1)/9 = 
+    1. We multiply each spot in the index with the correct weight and we get  
+    2. Then divide by all weights added together and that is the new value of the middle index in the window
+    
+    7(1) + 7(2) + 3(1) = 24
+    24/(1 + 2 + 1) = 6
+    
+    The reason that the middle of the window has a higher weight is to give the values closest the most influence on what the final middle     value will be.
+    
